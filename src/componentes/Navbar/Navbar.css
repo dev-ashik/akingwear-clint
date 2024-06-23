@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.navbar_innercontent {
+  /* max-width: 1200px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.navlogo {
+  width: 60px;
+}
+
+.navlogo img {
+  height: 50px;
+  width: 50px;
+}
+
+.navLinks {
+  /* width: 100%; */
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.navLinks_item {
+  text-decoration: none;
+
+  margin: 5px 20px;
+  color: var(--primary-color);
+}

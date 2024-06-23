@@ -1,0 +1,35 @@
+.footer {
+  background-color: #a3a7b5;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.footerTop_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerTop_logo h2 {
+  color: var(--primary-color);
+}
+
+.footer_logo {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+
+.footer_qrcode img {
+  height: 100px;
+  width: 100px;
+}
+
+.footer_contact_div {
+  margin: 0 100px;
+}

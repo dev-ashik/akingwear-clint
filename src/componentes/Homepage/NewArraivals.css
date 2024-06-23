@@ -1,0 +1,156 @@
+.newArraivals {
+  margin: 40px 0;
+}
+
+.newArraivals_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.newArraivals_item {
+  position: relative;
+  box-shadow: lightgray 1px 1px 10px;
+}
+
+.newArraivals_item_img {
+  width: 400px;
+  height: 280px;
+}
+
+.newArraivals_item_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: var(--primary-color);
+  opacity: 0.7;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  display: none;
+
+  transition: all 0.7s ease-in-out;
+  animation: arrival_animation 0.7s ease-in-out;
+}
+
+@keyframes arrival_animation {
+  from {
+    /* opacity: 0; */
+    height: 0;
+  }
+  to {
+    /* opacity: 1; */
+    height: 90%;
+  }
+}
+
+.newArraivals_item:hover .newArraivals_item_content {
+  display: block;
+}
+
+.newArraivals_item_content-title {
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.newArraivals_item_content-des {
+  padding: 20px 40px;
+  color: #dfdfdf;
+}
+
+
+
+/* about us */
+.aboutcompany {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 150px;
+}
+
+.aboutcompany_left, .aboutcompany_right {
+  width: 50%;
+}
+
+.aboutcompany_left img {
+  height: 400px;
+  width: 100%;
+}
+
+.aboutcompany_right {
+  padding: 50px;
+}
+
+.aboutcompany_right-title {
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+
+.aboutcompany_right-subtitle {
+  margin-bottom: 15px;
+}
+
+.aboutcompany_right-p {
+  text-align: justify;
+  color: gray;
+}
+
+
+
+
+/* trade template */
+
+.tradeteam {
+  margin-bottom: 100px;
+}
+
+.tradeteam_title {
+  margin-top: 80px;
+}
+
+.tradeteam_members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tradeteam_member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: lightgray 1px 1px 10px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.tradeteam_member:hover {
+  box-shadow: var(--primary-color) 1px 1px 10px;
+}
+
+.tradeteam_member img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.tradeteam_member h3 {
+  color: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tradeteam_member p {
+  font-size: 12px;
+  color: gray;
+}
