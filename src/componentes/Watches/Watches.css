@@ -1,0 +1,31 @@
+.watches {
+    margin: 30px 0;
+}
+.watches_filterbtn_div {
+    background-color: #C0C0C0;
+    border-radius: 20px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 260px;
+}
+
+.watches_filterbtn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+
+    min-width: 70px;
+    cursor: pointer;
+}
+
+.watches_filterbtn-active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}

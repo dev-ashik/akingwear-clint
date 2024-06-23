@@ -6,22 +6,34 @@
 import Footer from "./componentes/Footer/Footer";
 import Navbar from "./componentes/Navbar/Navbar";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Homepage from "./componentes/Homepage/Homepage";
+import AboutUs from "./componentes/AboutUs/AboutUs";
+import Watches from "./componentes/Watches/Watches";
+import NotFound from "./componentes/NotFound/NotFound";
+import Contact from "./componentes/Contact/Contact";
+import ProductDetais from "./componentes/ProductDetais/ProductDetais";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/watches" element={<Footer />} />
-        </Routes>
-      </BrowserRouter>
-      <Footer />
+
+      <Router>
+        <div>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="watches" element={<Watches />} />
+            <Route path="watches/:id" element={<ProductDetais />} />
+            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer/>
+        </div>
+      </Router>
     </>
   );
 }

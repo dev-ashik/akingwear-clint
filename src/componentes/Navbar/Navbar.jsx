@@ -1,5 +1,5 @@
 // import React from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AkingwearLogo } from "../../assets/injex";
 import "./Navbar.css";
 
@@ -11,18 +11,10 @@ const Navbar = () => {
           <img src={AkingwearLogo} alt="Akingwear" />
         </div>
         <div className="navLinks">
-          {/* <NavLink to="/">Home</NavLink> */}
-          <NavLink to="/">Home</NavLink>
-
-          <a className="navLinks_item" href="">
-            Watches
-          </a>
-          <a className="navLinks_item" href="">
-            About us
-          </a>
-          <a className="navLinks_item" href="">
-            Contact
-          </a>
+          <Link className="navLinks_item" to="/">Home</Link>
+          <Link className="navLinks_item" to="/watches">Watches</Link>
+          <Link className="navLinks_item" to="/aboutus">About us</Link>
+          <Link className="navLinks_item" to="/contact">Contact</Link>
         </div>
       </div>
     </nav>
