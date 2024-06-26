@@ -3,7 +3,7 @@ import Herosection from './Herosection.jsx';
 
 const Homepage = () => {
   return (
-    <div className='largewidth'>
+    <div className='pagewidth homepage' style={{ paddingTop: '3.5rem' }}>
         <Herosection/>
         <NewArraivals/>
     </div>

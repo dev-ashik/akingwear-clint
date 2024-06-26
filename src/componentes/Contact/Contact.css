@@ -1,0 +1,97 @@
+.contact {
+  padding-bottom: 5rem;
+}
+
+.contact_info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.contactInfo_text,
+.contact_image {
+  width: 50%;
+}
+
+.contactInfo_text p {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contactInfo_text p svg {
+  font-size: 25px;
+}
+
+.contactInfo_qrcode {
+  display: flex;
+  gap: 30px;
+}
+
+.contactInfo_qrcode img {
+  height: 200px;
+  width: 200px;
+}
+
+.contact_image img {
+  width: 100%;
+  height: 32rem;
+}
+
+/* contact_email */
+.contact_email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_email h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  box-shadow: lightgray 1px 1px 10px;
+  box-sizing: border-box;
+  padding: 20px;
+
+  width: 40rem;
+}
+
+.contactForm_name,
+.contactForm_email {
+  display: flex;
+  gap: 10px;
+}
+
+.contactForm_name label,
+.contactForm_email label,
+.contactForm_message label {
+  font-size: 20px;
+  color: #000000;
+}
+
+.contactForm_name input,
+.contactForm_email input {
+  padding: 10px 20px;
+  border: none;
+  box-shadow: gray 1px 1px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contactForm_message {
+  display: flex;
+  gap: 20px;
+}
+
+.contactForm_message textarea {
+  resize: none;
+  height: 10rem;
+
+  padding: 10px 20px;
+  border: none;
+  box-shadow: gray 1px 1px 10px;
+  border-radius: 5px;
+}

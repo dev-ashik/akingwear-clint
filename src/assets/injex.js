@@ -13,6 +13,7 @@ import ak43_3 from "./watches/ak43/ak43-3.jpg";
 import ak43_4 from "./watches/ak43/ak43-4.jpg";
 import ak43_5 from "./watches/ak43/ak43-5.jpg";
 import ak43_6 from "./watches/ak43/ak43-6.jpg";
+import contactusBg from "./contactusBg.jpg";
 
 export {
   AkingwearLogo,
@@ -24,11 +25,14 @@ export {
   office,
   whatsapp,
   wechat,
+  contactusBg,
 
   ak43_1,
   ak43_2,
   ak43_3,
   ak43_4,
   ak43_5,
-  ak43_6
+  ak43_6,
+
+
 };

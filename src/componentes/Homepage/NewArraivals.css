@@ -4,18 +4,23 @@
 
 .newArraivals_items {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .newArraivals_item {
   position: relative;
   box-shadow: lightgray 1px 1px 10px;
+
+  width: 20rem;
+  height: 280px;
 }
 
 .newArraivals_item_img {
-  width: 400px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
 }
 
 .newArraivals_item_content {
@@ -23,36 +28,47 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 90%;
+  height: 100%;
   background-color: var(--primary-color);
-  opacity: 0.7;
+  opacity: 0.85;
 
   text-align: center;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   display: none;
 
-  transition: all 0.7s ease-in-out;
-  animation: arrival_animation 0.7s ease-in-out;
+  transition: all 0.7s ease;
+  animation: arrival_animation 0.7s ease;
+
+  /* transform: scaleX(0);
+  transition: transform 0.5s ease; */
 }
 
 @keyframes arrival_animation {
   from {
-    /* opacity: 0; */
+    opacity: 0;
     height: 0;
   }
   to {
-    /* opacity: 1; */
-    height: 90%;
+    opacity: 0.85;
+    height: 100%;
   }
 }
 
 .newArraivals_item:hover .newArraivals_item_content {
-  display: block;
+  display: flex;
 }
+
+/* .newArraivals_item_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
 
 .newArraivals_item_content-title {
   font-size: 30px;
@@ -68,26 +84,38 @@
 
 
 
+
+
 /* about us */
 .aboutcompany {
+  background-color: lightgray;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   margin-top: 150px;
+
+  height: 30rem;
 }
 
 .aboutcompany_left, .aboutcompany_right {
   width: 50%;
+  height: 100%;
 }
 
 .aboutcompany_left img {
-  height: 400px;
+  height: 100%;
   width: 100%;
 }
 
 .aboutcompany_right {
   padding: 50px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .aboutcompany_right-title {
@@ -114,7 +142,7 @@
 }
 
 .tradeteam_title {
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .tradeteam_members {

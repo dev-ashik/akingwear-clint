@@ -3,7 +3,7 @@
 
 #root {
   --primary-color: #0f2fc4;
-  --secondary-color: #475EC8;
+  --secondary-color: #138aca;
   --secondary-color-2: #f7f1e3;
   --page-bg: #7c5531;
   --pink-color: #ff7eb9;
@@ -17,6 +17,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--ubuntu);
+
+  /* transition: 0.3s ease; */
 }
 
 body {
@@ -52,11 +54,16 @@ body {
 
 /* ********************Common styles****************
 ********************************************* */
-.section_heading {
-  color: var(--primary-color);
+.pagewidth {
+  max-width: 1450px;
+  margin: auto;
+}
 
+.section_heading {
+  /* h2 */
+  color: var(--primary-color);
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 .button_primary {
@@ -73,6 +80,11 @@ body {
   transition: background-image 0.3s ease-in-out;
   font-size: 19px;
   /* letter-spacing: 2px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .button_primary:hover {
@@ -117,11 +129,6 @@ body {
   margin: 1rem 0;
   font-weight: 700;
 } */
-
-.largewidth {
-  max-width: 1450px;
-  margin: auto;
-}
 
 .div_center {
   display: flex;

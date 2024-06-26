@@ -1,31 +1,135 @@
 .watches {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 .watches_filterbtn_div {
-    background-color: #C0C0C0;
-    border-radius: 20px;
-    margin: auto;
+  background-color: #c0c0c0;
+  border-radius: 20px;
+  margin: auto;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    max-width: 260px;
+  max-width: 260px;
 }
 
 .watches_filterbtn {
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
 
-    min-width: 70px;
-    cursor: pointer;
+  min-width: 70px;
+  cursor: pointer;
 }
 
 .watches_filterbtn-active {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.product_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+/* cart */
+.product_cart {
+  width: 20rem;
+  margin: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+
+  /* same size of all box */
+  align-self: normal;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.product_img {
+    width: 100%;
+    height: 14rem;
+    object-fit: fill;
+}
+
+.product_desc {
+  padding: 14px 20px;
+}
+
+.productCart_model {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.product_desc p {
+    color: #525252;
+    font-size: 12px;
+}
+
+.productCart_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.productCart_footer .seeMore_btn {
     background-color: var(--primary-color);
     color: white;
-    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+
+
+/* downloadCatalogue_section */
+.downloadCatalogue_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+}
+
+.downloadCatalogue_section button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.downloadCatalogue_section button svg {
+    height: 20px;
+    width: 20px;
 }

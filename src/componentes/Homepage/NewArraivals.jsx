@@ -1,4 +1,5 @@
 import "./NewArraivals.css";
+import { FaArrowRight } from "react-icons/fa";
 import {
   newarraivalWatch1,
   newarraivalWatch2,
@@ -17,6 +18,13 @@ const newarraival = [
   {
     id: 2,
     img: newarraivalWatch2,
+    modelnumber: "AK20",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Scelerisque nisl mi proin dictumst amet. Purus sed enim elit pulvinar et id. Volutpat sit natoque faucibus id vel arcu scelerisque vel.",
+  },
+  {
+    id: 3,
+    img: newarraivalWatch3,
     modelnumber: "AK20",
     description:
       "Lorem ipsum dolor sit amet consectetur. Scelerisque nisl mi proin dictumst amet. Purus sed enim elit pulvinar et id. Volutpat sit natoque faucibus id vel arcu scelerisque vel.",
@@ -71,6 +79,10 @@ const NewArraivals = () => {
                 <p className="newArraivals_item_content-des">
                   {watch.description}
                 </p>
+                <div>
+
+                <button className="button_primary" style={{boxShadow: "lightgray 1px 1px 10px"}}>See more <FaArrowRight /></button>
+                </div>
               </div>
             </div>
           ))}

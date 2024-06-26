@@ -1,0 +1,71 @@
+.aboutUs_header {
+  background-image: url("../../assets/aboutus-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 30rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  padding-left: 4rem;
+}
+
+.aboutUsHeader_title {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.aboutUsHeader_desc {
+  color: #efefef;
+  max-width: 30rem;
+}
+
+.aboutUs_content {
+  display: flex;
+}
+
+.aboutUsContent_left,
+.aboutUsContent_right {
+  width: 50%;
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+.aboutUsContent_left {
+  border-right: 5px solid black;
+  text-align: right;
+}
+
+.aboutUsContent_right {
+  text-align: left;
+  /* background-color: gray; */
+}
+
+.aboutUsContentLeft_factory h1,
+.aboutUsContentRight_company h1,
+.aboutUsContentLeft_capacity h1,
+.aboutUsContentRight_odmoem h1,
+.aboutUsContentLeft_address h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+
+.aboutUsContentLeft_factory {
+    margin-bottom: 15rem;
+}
+
+.aboutUsContentRight_company {
+    margin-top: 15rem;
+}
+
+.aboutUsContentLeft_capacity {
+    margin-bottom: 10rem;
+}
+
+.aboutUsContentRight_odmoem {
+    margin-top: 10rem;
+}
