@@ -1,62 +1,86 @@
 import "./NewArraivals.css";
 import { FaArrowRight } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { IoLogoWechat } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
 import {
+  ashik_profile,
+  kelvin_profile,
+  mehedi_profile,
   newarraivalWatch1,
   newarraivalWatch2,
   newarraivalWatch3,
+  newarraivalWatch4,
   office,
 } from "../../assets/injex";
 
 const newarraival = [
   {
     id: 1,
+    ProductId: "",
     img: newarraivalWatch1,
-    modelnumber: "AK20",
+    modelnumber: "AK-58",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Scelerisque nisl mi proin dictumst amet. Purus sed enim elit pulvinar et id. Volutpat sit natoque faucibus id vel arcu scelerisque vel.",
+      "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
   },
   {
     id: 2,
+    ProductId: "",
     img: newarraivalWatch2,
-    modelnumber: "AK20",
+    modelnumber: "AK-60",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Scelerisque nisl mi proin dictumst amet. Purus sed enim elit pulvinar et id. Volutpat sit natoque faucibus id vel arcu scelerisque vel.",
+      "Introducing our new smartwatch: stylish, durable, with AI voice support and advanced fitness tracking. Perfect for active lifestyles!",
   },
   {
     id: 3,
+    ProductId: "",
     img: newarraivalWatch3,
-    modelnumber: "AK20",
+    modelnumber: "AK-72",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Scelerisque nisl mi proin dictumst amet. Purus sed enim elit pulvinar et id. Volutpat sit natoque faucibus id vel arcu scelerisque vel.",
+      "Check out our new smartwatch! Sleek, long-lasting, with AI voice support and top-tier fitness tracking for active users.",
   },
   {
-    id: 3,
-    img: newarraivalWatch3,
-    modelnumber: "AK20",
+    id: 4,
+    ProductId: "",
+    img: newarraivalWatch4,
+    modelnumber: "AK-50",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Scelerisque nisl mi proin dictumst amet. Purus sed enim elit pulvinar et id. Volutpat sit natoque faucibus id vel arcu scelerisque vel.",
+      "Explore our latest smartwatch: elegant design, robust build, AI voice support, and advanced fitness tracking for your active life.",
   },
 ];
 
 const tradeTeam = [
   {
     id: 1,
-    img: newarraivalWatch3,
+    img: kelvin_profile,
     name: "Mr. Kelvin",
-    position: "CEO"
+    position: "CEO",
+    Phone: "1555 963 2605",
+    whatsapp: "1555 963 2605",
+    Wechat: "dafkj25",
+    email: "ashikmahmud@wokoxun.net",
   },
   {
     id: 2,
-    img: newarraivalWatch3,
+    img: ashik_profile,
     name: "MD ASHIK MAHMUD",
-    position: "Foreign Trade consultent"
+    position: "Foreign Trade consultent",
+    Phone: "1555 963 2605",
+    whatsapp: "1555 963 2605",
+    Wechat: "dafkj25",
+    email: "ashikmahmud@wokoxun.net",
   },
   {
     id: 3,
-    img: newarraivalWatch3,
-    name: "Aewin",
-    position: "Foreign Trade consultent"
-  }
+    img: mehedi_profile,
+    name: "Md Mehedi Hasan",
+    position: "Foreign Trade consultent",
+    Phone: "1555 963 2605",
+    whatsapp: "1555 963 2605",
+    Wechat: "dafkj25",
+    email: "ashikmahmud@wokoxun.net",
+  },
 ];
 
 const NewArraivals = () => {
@@ -74,14 +98,18 @@ const NewArraivals = () => {
               />
               <div className="newArraivals_item_content">
                 <h3 className="newArraivals_item_content-title">
-                  {watch.modelnumber}
+                  Model: {watch.modelnumber}
                 </h3>
                 <p className="newArraivals_item_content-des">
                   {watch.description}
                 </p>
                 <div>
-
-                <button className="button_primary" style={{boxShadow: "lightgray 1px 1px 10px"}}>See more <FaArrowRight /></button>
+                  <button
+                    className="button_primary"
+                    style={{ boxShadow: "lightgray 1px 1px 10px" }}
+                  >
+                    See more <FaArrowRight />
+                  </button>
                 </div>
               </div>
             </div>
@@ -96,38 +124,59 @@ const NewArraivals = () => {
         </div>
         <div className="aboutcompany_right">
           <h2 className="aboutcompany_right-title">About Compay</h2>
-          <h4 className="aboutcompany_right-subtitle">Shenzhen Wo Ko sun Electronic Technology Co., Ltd.</h4>
+          <h4 className="aboutcompany_right-subtitle">
+            Shenzhen Wo Ko sun Electronic Technology Co., Ltd.
+          </h4>
           <p className="aboutcompany_right-p">
-            Lorem ipsum dolor sit amet consectetur. Scelerisque nisl mi proin
-            dictumst amet. Purus sed enim elit pulvinar et id. Volutpat sit
-            natoque faucibus id vel arcu scelerisque vel. Aliquam feugiat
-            hendrerit amet sed consectetur lectus cras eu fusce. Eget ipsum
-            purus vel enim nam orci consectetur. Neque hendrerit lacus dui nulla
-            nibh fermentum. Amet aliquam nam suscipit commodo nulla. Ac maecenas
-            interdum tristique euismod
+            The company is committed to the research and development, design,
+            and production services of inteligentwearable devices, providing
+            one-stop services from multi category, multi appearance, and
+            differentiatedresearch and development to landing. t is a
+            professional intelligent wearable production and supply
+            sourcemanufacturer, mainly engaged in inteligent wearable design,
+            research and development, mold production, andsupporting various
+            types of intelligent wearable devices Customization of OEM/ODM and
+            App software; Thecompany has an efficient and professional design
+            and development team as well as a production team. Wewill provide
+            high-quality products and excellent services according to user
+            needs!
           </p>
         </div>
       </div>
 
-
       {/* Trade team */}
-          <div className="tradeteam">
-            <h2 className="tradeteam_title section_heading">Trade Team</h2>
-            <div className="tradeteam_members">
-            {
-              tradeTeam.map((item) => (
-                <div key={item.id}  className="tradeteam_member">
-                  <img src={item.img} alt="img" />
+      <div className="tradeteam">
+        <h2 className="tradeteam_title section_heading">Trade Team</h2>
+        <div className="tradeteam_members">
+          {tradeTeam.map((item) => (
+            <div key={item.id} className="tradeteam_member">
+              <div className="tradeteam_member_image">
+                <img src={item.img} alt="img" />
+              </div>
+              <div className="tradeteamMember_content">
+                <div className="tradeteamMember_title">
                   <h3>{item.name}</h3>
                   <p>{item.position}</p>
                 </div>
-              ))
-            }
+                <div className="tradeteamMember_contact">
+                  <p>
+                    <FaPhoneAlt /> {item.Phone}
+                  </p>
+                  <p>
+                    <FaWhatsappSquare /> {item.whatsapp}
+                  </p>
+                  <p>
+                    <IoLogoWechat /> {item.Wechat}
+                  </p>
+                  <p>
+                    <MdEmail /> {item.email}
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-
-
-
+          ))}
+        </div>
+      </div>
     </>
   );
 };

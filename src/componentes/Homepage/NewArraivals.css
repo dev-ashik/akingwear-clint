@@ -4,7 +4,7 @@
 
 .newArraivals_items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -82,10 +82,6 @@
   color: #dfdfdf;
 }
 
-
-
-
-
 /* about us */
 .aboutcompany {
   background-color: lightgray;
@@ -93,25 +89,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   margin-top: 150px;
 
-  height: 30rem;
+  /* height: 30rem; */
 }
 
-.aboutcompany_left, .aboutcompany_right {
+.aboutcompany_left,
+.aboutcompany_right {
   width: 50%;
   height: 100%;
 }
 
 .aboutcompany_left img {
-  height: 100%;
+  height: 30rem;
   width: 100%;
 }
 
 .aboutcompany_right {
   padding: 50px;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,14 +130,7 @@
   color: gray;
 }
 
-
-
-
 /* trade template */
-
-.tradeteam {
-  margin-bottom: 100px;
-}
 
 .tradeteam_title {
   margin-top: 30px;
@@ -149,27 +140,61 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 .tradeteam_member {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 
+  width: 20rem;
+  height: 16rem;
+  padding: 20px;
+  margin-bottom: 100px;
+
   box-shadow: lightgray 1px 1px 10px;
-  padding: 30px;
   border-radius: 20px;
+  position: relative;
 }
 
 .tradeteam_member:hover {
   box-shadow: var(--primary-color) 1px 1px 10px;
 }
 
-.tradeteam_member img {
-  height: 150px;
-  width: 150px;
+.tradeteam_member_image {
+  border: 8px solid white;
+  /* padding: 5px; */
   border-radius: 50%;
+
+  height: 130px;
+  width: 130px;
+
+  position: absolute;
+  top: -70px;
+  left: 90px;
+
+  transition: all 0.7s ease;
+}
+
+.tradeteam_member:hover .tradeteam_member_image {
+  transform: scale(1.1);
+}
+
+.tradeteam_member .tradeteam_member_image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  /* border: 1px solid gray; */
+
+  box-shadow: lightgray 1px 1px 10px;
+}
+
+.tradeteamMember_title {
+  text-align: center;
 }
 
 .tradeteam_member h3 {
@@ -181,4 +206,43 @@
 .tradeteam_member p {
   font-size: 12px;
   color: gray;
+}
+
+.tradeteamMember_contact {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.tradeteamMember_contact p {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+
+  font-size: 15px;
+}
+
+.tradeteamMember_contact p svg {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 912px) {
+  .aboutcompany {
+    background-color: transparent;
+
+    flex-direction: column;
+  }
+
+  .aboutcompany_left,
+  .aboutcompany_right {
+    width: 100vw;
+    /* height: 100%; */
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .aboutcompany_right {
+    padding: 10px;
+  }
 }

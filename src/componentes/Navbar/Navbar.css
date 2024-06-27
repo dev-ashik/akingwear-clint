@@ -1,6 +1,7 @@
 .navbar {
   background-color: white;
-  border-bottom: 1px solid lightgray;
+  /* border-bottom: 1px solid lightgray; */
+  box-shadow: lightgray 1px 1px 10px;
 
   z-index: 1000;
   position: fixed;

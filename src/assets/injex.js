@@ -4,6 +4,10 @@ import herosection_watch from "./herosection_watch.png";
 import newarraivalWatch1 from "./newarraival/watch1.jpg";
 import newarraivalWatch2 from "./newarraival/watch2.jpg";
 import newarraivalWatch3 from "./newarraival/watch3.jpg";
+import newarraivalWatch4 from "./newarraival/newArrival_4.jpg";
+import ashik_profile from "./tradeTeam/ashik.jpg";
+import kelvin_profile from "./tradeTeam/kelvin.jpg";
+import mehedi_profile from "./tradeTeam/mehedi.jpg";
 import office from "./office.png";
 import whatsapp from "./whatsapp.jpg";
 import wechat from "./wechat.jpg";
@@ -22,6 +26,10 @@ export {
   newarraivalWatch1,
   newarraivalWatch2,
   newarraivalWatch3,
+  newarraivalWatch4,
+  ashik_profile,
+  kelvin_profile,
+  mehedi_profile,
   office,
   whatsapp,
   wechat,
