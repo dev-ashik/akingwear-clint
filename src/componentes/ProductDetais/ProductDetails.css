@@ -53,14 +53,17 @@
 .productDetails .restImages {
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 16px;
+    flex-wrap: wrap;
     margin: 20px 0;
+
+    width: 30rem;
 
 }
 
 .productDetails .restImages .restImage {
-    height: 5rem;
-    width: 5rem;
+    height: 5.2rem;
+    width: 5.2rem;
     object-fit: contain;
 
     cursor: pointer;

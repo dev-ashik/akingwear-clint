@@ -14,11 +14,12 @@ import {
   newarraivalWatch4,
   office,
 } from "../../assets/injex";
+import { Link } from "react-router-dom";
 
 const newarraival = [
   {
     id: 1,
-    ProductId: "",
+    productId: "ak58_14",
     img: newarraivalWatch1,
     modelnumber: "AK-58",
     description:
@@ -26,7 +27,7 @@ const newarraival = [
   },
   {
     id: 2,
-    ProductId: "",
+    productId: "ak60_12",
     img: newarraivalWatch2,
     modelnumber: "AK-60",
     description:
@@ -34,7 +35,7 @@ const newarraival = [
   },
   {
     id: 3,
-    ProductId: "",
+    productId: "ak72_2",
     img: newarraivalWatch3,
     modelnumber: "AK-72",
     description:
@@ -42,7 +43,7 @@ const newarraival = [
   },
   {
     id: 4,
-    ProductId: "",
+    productId: "ak50_18",
     img: newarraivalWatch4,
     modelnumber: "AK-50",
     description:
@@ -104,12 +105,13 @@ const NewArraivals = () => {
                   {watch.description}
                 </p>
                 <div>
-                  <button
+                  <Link
+                    to={`watches/${watch.productId}`}
                     className="button_primary"
                     style={{ boxShadow: "lightgray 1px 1px 10px" }}
                   >
                     See more <FaArrowRight />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

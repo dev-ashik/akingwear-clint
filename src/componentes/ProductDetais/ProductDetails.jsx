@@ -6,8 +6,11 @@ import { useEffect, useState } from "react";
 const ProductDetails = () => {
   const [watch, setWatch] = useState({});
   const [largeImg, setLargeImg] = useState("");
-
   let { watchId } = useParams();
+
+  const handleLargephoto = (index) => {
+    setLargeImg(watch.img[index])
+  }
 
   useEffect(() => {
     const currentWatch = all_watches_data.filter(
@@ -33,7 +36,7 @@ const ProductDetails = () => {
           <div className="restImages">
             {
               watch.img && watch.img.map((image, index) => (
-                  <img className="restImage" src={image} alt="img" key={index} />
+                  <img className="restImage" onClick={()=>handleLargephoto(index)} src={image} alt="img" key={index} />
               ))
             }
           </div>
