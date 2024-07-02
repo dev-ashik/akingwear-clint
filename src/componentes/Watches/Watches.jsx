@@ -7,15 +7,26 @@ import { FaArrowLeft } from "react-icons/fa6";
 // import { all_watches_data } from "../../data/watches";
 // import { all_watches_data } from "../../data/watches/all_watches_data";
 
+import Axios from "axios";
+import fileDownload from "js-file-download";
+import { Link } from "react-router-dom";
+
 const Watches = () => {
-  const itemsPerPage = 9;
+  // const itemsPerPage = 9;
   const [active, setActive] = useState("all");
   const [filteredWatches, setFilteredWatches] = useState([]);
-  const [watchesToWhow, setWatchesToWhow] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
-  const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(startIndex + itemsPerPage);
-  
+  // const [watchesToShow, setWatchesToShow] = useState([]);
+  // const [currentPage, setCurrentPage] = useState(0);
+  // const [startIndex, setStartIndex] = useState(0);
+  // const [endIndex, setEndIndex] = useState(startIndex + itemsPerPage);
+
+  const handleDownloadCv = (url, filename) => {
+    Axios.get(url, {
+      responseType: "blob",
+    }).then((res) => {
+      fileDownload(res.data, filename);
+    });
+  };
 
   const handleFilterProduct = (filter) => {
     setActive(filter);
@@ -25,55 +36,46 @@ const Watches = () => {
         (watch) => watch.gender == "male"
       );
       setFilteredWatches(maleWatches);
-      setWatchesToWhow(maleWatches.slice(0, 9));
+      // setWatchesToWhow(maleWatches.slice(0, 9));
     } else if (filter == "female") {
       const femaleWatches = all_watches_data.filter(
         (watch) => watch.gender == "female"
       );
       setFilteredWatches(femaleWatches);
-      setWatchesToWhow(femaleWatches.slice(0, 9));
+      // setWatchesToWhow(femaleWatches.slice(0, 9));
     } else {
       setFilteredWatches(all_watches_data);
-      setWatchesToWhow(all_watches_data.slice(0, 9));
+      // setWatchesToWhow(all_watches_data.slice(0, 9));
     }
   };
 
-  const handlePegination = () => {
-    // const startIndex = currentPage * itemsPerPage;
-    setStartIndex(currentPage * itemsPerPage)
-    // const endIndex = startIndex + itemsPerPage;
-    setEndIndex(startIndex + itemsPerPage)
-    const currentWatches = filteredWatches.slice(startIndex, endIndex);
+  // const handlePegination = () => {
+  //   // const startIndex = currentPage * itemsPerPage;
+  //   setStartIndex(currentPage * itemsPerPage)
+  //   // const endIndex = startIndex + itemsPerPage;
+  //   setEndIndex(startIndex + itemsPerPage)
+  //   const currentWatches = filteredWatches.slice(startIndex, endIndex);
 
-    setWatchesToWhow(currentWatches)
-  } 
+  //   setWatchesToWhow(currentWatches)
+  // }
 
   const handleBack = () => {
-    // setCurrentPage((prevPage) => prevPage - 1);
-    // handlePegination();
+    console.log("back");
   };
 
   const handleNext = () => {
-    // setCurrentPage((prevPage) => prevPage + 1);
-    // handlePegination();
-    if (filteredWatches.length > startIndex) {
-      const nextPage = currentPage + 1;
-      setCurrentPage(nextPage);
-      handlePegination()
-    }
-    
-    // const currentWatches = filteredWatches.slice(startIndex, endIndex);
+    console.log("next");
   };
 
   useEffect(() => {
     setFilteredWatches(all_watches_data);
-    setWatchesToWhow(all_watches_data.slice(0, 9));
+    // setWatchesToWhow(all_watches_data.slice(0, 9));
     return () => {};
   }, []);
 
   console.log(filteredWatches);
-  console.log(watchesToWhow);
-  console.log(currentPage);
+  // console.log(watchesToWhow);
+  // console.log(currentPage);
   return (
     <div className="watches pagewidth">
       <div className="watches_filterbtn_div">
@@ -104,7 +106,7 @@ const Watches = () => {
       </div>
 
       <div className="product_section">
-        {watchesToWhow.map((watch) => (
+        {filteredWatches.map((watch) => (
           <div className="product_cart" key={watch.id}>
             <img className="product_img" src={watch.img[0]} alt="img" />
             <div className="product_desc">
@@ -112,25 +114,29 @@ const Watches = () => {
               <p>{watch.desc}</p>
             </div>
             <div className="productCart_footer">
-              <button className="seeMore_btn">
+              <Link to={`${watch.id}`} className="seeMore_btn">
                 See More <FaArrowRight />
-              </button>
+              </Link>
             </div>
           </div>
         ))}
       </div>
-      <div className="Watches_pegination">
-        {currentPage > 0 && (
-          <button onClick={handleBack()} className="button_primary">
-            back <FaArrowLeft />
-          </button>
-        )}
+      {/* <div className="Watches_pegination">
+        <button onClick={handleBack()} className="button_primary">
+          back <FaArrowLeft />
+        </button>
+
         <button onClick={() => handleNext()} className="button_primary">
           next <FaArrowRight />
         </button>
-      </div>
+      </div> */}
       <div className="downloadCatalogue_section">
-        <button>
+        <button onClick={() =>
+                handleDownloadCv(
+                  "https://t7fqhg.bl.files.1drv.com/y4mHBplT1Jdj8hPMBdzcueMJCTcX2gn-akWKtFfJ76LnF1KzfioYU64CJkNcbgt7zVuFC6rtyxYN0MHfVtAC3l1Z2YpmwHwK-HPuISvWGWIC6zfo8MNT30lcOZeq4xpY9STKJbfjsof-dXSvHYenAPQEEWZt1OUyvS8DVw2pk8Cwiz-1bHSAbyoe_nxJJZVuac60sNA2PRZWRc17VV-CydHzA",
+                  "Md_Ashik_Mahumd_CV.pdf"
+                )
+              }>
           Download catalogue <IoMdDownload />
         </button>
       </div>

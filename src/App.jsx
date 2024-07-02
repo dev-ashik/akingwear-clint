@@ -12,7 +12,7 @@ import AboutUs from "./componentes/AboutUs/AboutUs";
 import Watches from "./componentes/Watches/Watches";
 import NotFound from "./componentes/NotFound/NotFound";
 import Contact from "./componentes/Contact/Contact";
-import ProductDetais from "./componentes/ProductDetais/ProductDetais";
+import ProductDetails from "./componentes/ProductDetais/ProductDetails";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -26,7 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="watches" element={<Watches />} />
-            <Route path="watches/:id" element={<ProductDetais />} />
+            <Route path="watches/:watchId" element={<ProductDetails />} />
             <Route path="aboutus" element={<AboutUs />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
