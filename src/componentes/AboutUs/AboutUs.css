@@ -53,19 +53,61 @@
   margin-bottom: 10px;
 }
 
-
 .aboutUsContentLeft_factory {
-    margin-bottom: 15rem;
+  margin-bottom: 15rem;
 }
 
 .aboutUsContentRight_company {
-    margin-top: 15rem;
+  margin-top: 15rem;
 }
 
 .aboutUsContentLeft_capacity {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .aboutUsContentRight_odmoem {
-    margin-top: 10rem;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 666px) {
+
+
+  .aboutUs_content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+.aboutUsContent_left,
+.aboutUsContent_right {
+  width: 100%;
+  text-align: left;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+  /* padding: 2rem;
+  margin: 3rem 0; */
+}
+
+
+.aboutUsContentLeft_factory {
+  margin-bottom: 15px;
+}
+
+.aboutUsContentLeft_capacity {
+  margin-bottom: 15px;
+}
+.aboutUsContentRight_company,
+
+.aboutUsContentRight_odmoem {
+  margin: 0px;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .aboutUs_header {  
+    padding: 20px;
+  }
 }

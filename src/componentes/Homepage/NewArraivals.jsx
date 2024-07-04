@@ -52,35 +52,35 @@ const newarraival = [
 ];
 
 const tradeTeam = [
-  {
-    id: 1,
-    img: kelvin_profile,
-    name: "Mr. Kelvin",
-    position: "CEO",
-    Phone: "1555 963 2605",
-    whatsapp: "1555 963 2605",
-    Wechat: "dafkj25",
-    email: "ashikmahmud@wokoxun.net",
-  },
+  // {
+  //   id: 1,
+  //   img: kelvin_profile,
+  //   name: "Mr. Kelvin",
+  //   position: "CEO",
+  //   Phone: "",
+  //   whatsapp: "",
+  //   Wechat: "",
+  //   email: "",
+  // },
   {
     id: 2,
     img: ashik_profile,
     name: "MD ASHIK MAHMUD",
     position: "Foreign Trade consultent",
-    Phone: "1555 963 2605",
-    whatsapp: "1555 963 2605",
-    Wechat: "dafkj25",
+    Phone: "+86 1555 963 2605",
+    whatsapp: "+86 1555 963 2605",
+    Wechat: "ashik448",
     email: "ashikmahmud@wokoxun.net",
   },
   {
     id: 3,
     img: mehedi_profile,
-    name: "Md Mehedi Hasan",
+    name: "MD MEHEDI HASAN",
     position: "Foreign Trade consultent",
-    Phone: "1555 963 2605",
-    whatsapp: "1555 963 2605",
-    Wechat: "dafkj25",
-    email: "ashikmahmud@wokoxun.net",
+    Phone: "+86 1990 964 4914",
+    whatsapp: "+86 1990 964 4914",
+    Wechat: "mishu5772",
+    email: "mehedihasan604184@gmail.com",
   },
 ];
 

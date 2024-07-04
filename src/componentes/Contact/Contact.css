@@ -1,4 +1,5 @@
 .contact {
+  padding-top: 1rem;
   padding-bottom: 5rem;
 }
 
@@ -6,6 +7,7 @@
   display: flex;
   justify-content: left;
   align-items: center;
+  padding: 20px;
 }
 
 .contactInfo_text,
@@ -15,6 +17,9 @@
 
 .contactInfo_text p {
   display: flex;
+  justify-content: left;
+  align-items: end;
+
   gap: 10px;
   margin-bottom: 10px;
 }
@@ -23,14 +28,29 @@
   font-size: 25px;
 }
 
+.contactInfo_fbBtn {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  text-decoration: none;
+
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contactInfo_fbBtn svg {
+  font-size: 25px;
+}
+
 .contactInfo_qrcode {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .contactInfo_qrcode img {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .contact_image img {
@@ -94,4 +114,25 @@
   border: none;
   box-shadow: gray 1px 1px 10px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .contactInfo_qrcode img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .contact_info {
+    flex-direction: column-reverse;
+    /* justify-content: left;
+    align-items: center;
+    padding: 20px; */
+  }
+
+  .contactInfo_text,
+  .contact_image {
+    width: 100%;
+  }
 }

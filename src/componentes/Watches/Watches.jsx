@@ -73,9 +73,6 @@ const Watches = () => {
     return () => {};
   }, []);
 
-  console.log(filteredWatches);
-  // console.log(watchesToWhow);
-  // console.log(currentPage);
   return (
     <div className="watches pagewidth">
       <div className="watches_filterbtn_div">
@@ -131,12 +128,14 @@ const Watches = () => {
         </button>
       </div> */}
       <div className="downloadCatalogue_section">
-        <button onClick={() =>
-                handleDownloadCv(
-                  "https://t7fqhg.bl.files.1drv.com/y4mHBplT1Jdj8hPMBdzcueMJCTcX2gn-akWKtFfJ76LnF1KzfioYU64CJkNcbgt7zVuFC6rtyxYN0MHfVtAC3l1Z2YpmwHwK-HPuISvWGWIC6zfo8MNT30lcOZeq4xpY9STKJbfjsof-dXSvHYenAPQEEWZt1OUyvS8DVw2pk8Cwiz-1bHSAbyoe_nxJJZVuac60sNA2PRZWRc17VV-CydHzA",
-                  "Md_Ashik_Mahumd_CV.pdf"
-                )
-              }>
+        <button
+          onClick={() =>
+            handleDownloadCv(
+              "https://t7fqhg.bl.files.1drv.com/y4mHBplT1Jdj8hPMBdzcueMJCTcX2gn-akWKtFfJ76LnF1KzfioYU64CJkNcbgt7zVuFC6rtyxYN0MHfVtAC3l1Z2YpmwHwK-HPuISvWGWIC6zfo8MNT30lcOZeq4xpY9STKJbfjsof-dXSvHYenAPQEEWZt1OUyvS8DVw2pk8Cwiz-1bHSAbyoe_nxJJZVuac60sNA2PRZWRc17VV-CydHzA",
+              "Md_Ashik_Mahumd_CV.pdf"
+            )
+          }
+        >
           Download catalogue <IoMdDownload />
         </button>
       </div>

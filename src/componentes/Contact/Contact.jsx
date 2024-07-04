@@ -19,17 +19,22 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact largewidth">
+    <div className="contact pagewidth">
       <div className="contact_info">
         <div className="contactInfo_text">
-          <p>
+          <a
+            href="https://www.facebook.com/globalbridge11/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contactInfo_fbBtn"
+          >
             <FaFacebook /> Facebook
+          </a>
+          <p>
+            <FaPhoneAlt /> +86 1555 963 2606
           </p>
           <p>
-            <FaPhoneAlt /> +86 1857 554 9060
-          </p>
-          <p>
-            <MdEmail /> ashik.hello@outlook.com
+            <MdEmail /> ashikmahmud@wokoxun.net
           </p>
           <p>
             <FaLocationDot /> Longhua District, Shenzhen City, Guangdong
@@ -44,7 +49,9 @@ const Contact = () => {
           <img src={contactusBg} alt="contact" />
         </div>
       </div>
-      <div className="contact_email">
+
+      {/* Email Form */}
+      {/* <div className="contact_email">
         <h1>Contact Us</h1>
         <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
           <div className="contactForm_name">
@@ -84,7 +91,7 @@ const Contact = () => {
 
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };
