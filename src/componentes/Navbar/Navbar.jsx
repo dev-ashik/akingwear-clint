@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { AkingwearLogo } from "../../assets/injex";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import "./Navbar.css";
@@ -12,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar_innercontent pagewidth">
         <div className="navlogo">
-          <img src={AkingwearLogo} alt="Akingwear" />
+          <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227158/akingwearLogo_tqc1uo.webp'} alt="Akingwear" />
         </div>
         <ul className="navLinks">
           <li>

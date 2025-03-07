@@ -4,23 +4,13 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { IoLogoWechat } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import {
-  ashik_profile,
-  kelvin_profile,
-  mehedi_profile,
-  newarraivalWatch1,
-  newarraivalWatch2,
-  newarraivalWatch3,
-  newarraivalWatch4,
-  office,
-} from "../../assets/injex";
 import { Link } from "react-router-dom";
 
 const newarraival = [
   {
     id: 1,
     productId: "ak58_14",
-    img: newarraivalWatch1,
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227241/newArrival_1_sbzgqk.webp',
     modelnumber: "AK-58",
     description:
       "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
@@ -28,7 +18,7 @@ const newarraival = [
   {
     id: 2,
     productId: "ak60_12",
-    img: newarraivalWatch2,
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227236/newArrival_2_wukwhi.webp',
     modelnumber: "AK-60",
     description:
       "Introducing our new smartwatch: stylish, durable, with AI voice support and advanced fitness tracking. Perfect for active lifestyles!",
@@ -36,7 +26,7 @@ const newarraival = [
   {
     id: 3,
     productId: "ak72_2",
-    img: newarraivalWatch3,
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227292/newArrival_3_zd7iin.webp',
     modelnumber: "AK-72",
     description:
       "Check out our new smartwatch! Sleek, long-lasting, with AI voice support and top-tier fitness tracking for active users.",
@@ -44,7 +34,7 @@ const newarraival = [
   {
     id: 4,
     productId: "ak50_18",
-    img: newarraivalWatch4,
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227243/newArrival_4_naurw6.webp',
     modelnumber: "AK-50",
     description:
       "Explore our latest smartwatch: elegant design, robust build, AI voice support, and advanced fitness tracking for your active life.",
@@ -64,17 +54,17 @@ const tradeTeam = [
   // },
   {
     id: 2,
-    img: ashik_profile,
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227327/ashik_yrrkvn.webp',
     name: "MD ASHIK MAHMUD",
     position: "Foreign Trade consultent",
-    Phone: "+86 1555 963 2605",
-    whatsapp: "+86 1555 963 2605",
+    Phone: "+86 1555 963 2606",
+    whatsapp: "+86 1555 963 2606",
     Wechat: "ashik448",
     email: "ashikmahmud@wokoxun.net",
   },
   {
     id: 3,
-    img: mehedi_profile,
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227325/mehedi_lbbmdi.webp',
     name: "MD MEHEDI HASAN",
     position: "Foreign Trade consultent",
     Phone: "+86 1990 964 4914",
@@ -122,7 +112,7 @@ const NewArraivals = () => {
       {/* About company */}
       <div className="aboutcompany">
         <div className="aboutcompany_left">
-          <img src={office} alt="office" />
+          <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227158/office_fmw4tw.webp'} alt="office" />
         </div>
         <div className="aboutcompany_right">
           <h2 className="aboutcompany_right-title">About Compay</h2>

@@ -68,7 +68,7 @@ const ProductDetails = () => {
               <li>Language: {watch.language && watch.language}</li>
               <li>Strap: {watch.strap}</li>
               <li>Colors: {watch.colors}</li>
-              <li>warrantee: 1 Years</li>
+              <li>warrantee: 1 Year</li>
             </ul>
           </div>
 

@@ -1,4 +1,3 @@
-import { whatsapp } from "../../assets/injex";
 import "./BuyNowModal.css";
 import Modal from "react-modal";
 import { IoClose } from "react-icons/io5";
@@ -47,7 +46,7 @@ const BuyNowModal = ({ modalIsOpen, setModalIsOpen }) => {
 
         <h4>Payment temporay Disabled!! <br /> Please contact throuth Whatsapp or Email.</h4>
 
-        <img className="whatappQrCode" src={whatsapp} alt="whatsapp"/>
+        <img className="whatappQrCode" src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227160/whatsapp_wugjdo.webp'} alt="whatsapp"/>
         <p>Email: ashikmahmud@wokoxun.net</p>
         </div>
         

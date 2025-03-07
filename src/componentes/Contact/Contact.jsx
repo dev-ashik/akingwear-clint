@@ -1,4 +1,4 @@
-import { contactusBg, wechat, whatsapp } from "../../assets/injex";
+import { contactusBg } from "../../assets/injex";
 import { FaFacebook } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -41,12 +41,12 @@ const Contact = () => {
             Province, China
           </p>
           <div className="contactInfo_qrcode">
-            <img src={whatsapp} alt="whataspp" />
-            <img src={wechat} alt="wechat" />
+            <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227160/whatsapp_wugjdo.webp'} alt="whataspp" />
+            <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227157/wechat_lykqb3.webp'} alt="wechat" />
           </div>
         </div>
         <div className="contact_image">
-          <img src={contactusBg} alt="contact" />
+          <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227161/contactusBg_dj8bmi.webp'} alt="contact" />
         </div>
       </div>
 

@@ -1,4 +1,3 @@
-import { AkingwearLogo, wechat, whatsapp } from "../../assets/injex";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
@@ -11,7 +10,7 @@ const Footer = () => {
         <div className="footer_top">
           <div className="footerTop_logo">
             <h2>Akingwear</h2>
-            <img className="footer_logo" src={AkingwearLogo} alt="logo" />
+            <img className="footer_logo" src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227158/akingwearLogo_tqc1uo.webp'} alt="logo" />
           </div>
           <div className="footer_contact_div">
             <h4>Contact</h4>
@@ -30,8 +29,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer_qrcode">
-            <img src={whatsapp} alt="whatsapp" />
-            <img src={wechat} alt="Wechat" />
+            <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227160/whatsapp_wugjdo.webp'} alt="whatsapp" />
+            <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227157/wechat_lykqb3.webp'} alt="Wechat" />
           </div>
         </div>
       </div>
