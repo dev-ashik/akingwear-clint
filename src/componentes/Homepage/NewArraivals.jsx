@@ -1,44 +1,76 @@
 import "./NewArraivals.css";
 import { FaArrowRight } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaWhatsappSquare } from "react-icons/fa";
-import { IoLogoWechat } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
+// import { FaPhoneAlt } from "react-icons/fa";
+// import { FaWhatsappSquare } from "react-icons/fa";
+// import { IoLogoWechat } from "react-icons/io5";
+// import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const newarraival = [
   {
-    id: 1,
+    id: "ggf",
+    productId: "ak77_25",
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741315508/ak77_1_pgfp3c.jpg',
+    modelnumber: "AK-77",
+    description:
+      "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
+  },
+  {
+    id: "ggf",
+    productId: "ak80_24",
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741315811/ak80_2_erf6ox.jpg',
+    modelnumber: "AK-58",
+    description:
+      "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
+  },
+  {
+    id: "ggf",
+    productId: "ak82_22",
+    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741316328/ak82_1_vepvg7.jpg',
+    modelnumber: "AK-58",
+    description:
+      "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
+  },
+  {
+    id: "ggf",
     productId: "ak58_14",
     img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227241/newArrival_1_sbzgqk.webp',
     modelnumber: "AK-58",
     description:
       "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
   },
-  {
-    id: 2,
-    productId: "ak60_12",
-    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227236/newArrival_2_wukwhi.webp',
-    modelnumber: "AK-60",
-    description:
-      "Introducing our new smartwatch: stylish, durable, with AI voice support and advanced fitness tracking. Perfect for active lifestyles!",
-  },
-  {
-    id: 3,
-    productId: "ak72_2",
-    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227292/newArrival_3_zd7iin.webp',
-    modelnumber: "AK-72",
-    description:
-      "Check out our new smartwatch! Sleek, long-lasting, with AI voice support and top-tier fitness tracking for active users.",
-  },
-  {
-    id: 4,
-    productId: "ak50_18",
-    img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227243/newArrival_4_naurw6.webp',
-    modelnumber: "AK-50",
-    description:
-      "Explore our latest smartwatch: elegant design, robust build, AI voice support, and advanced fitness tracking for your active life.",
-  },
+  // {
+  //   id: 1,
+  //   productId: "ak58_14",
+  //   img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227241/newArrival_1_sbzgqk.webp',
+  //   modelnumber: "AK-58",
+  //   description:
+  //     "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
+  // },
+  // {
+  //   id: 2,
+  //   productId: "ak60_12",
+  //   img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227236/newArrival_2_wukwhi.webp',
+  //   modelnumber: "AK-60",
+  //   description:
+  //     "Introducing our new smartwatch: stylish, durable, with AI voice support and advanced fitness tracking. Perfect for active lifestyles!",
+  // },
+  // {
+  //   id: 3,
+  //   productId: "ak72_2",
+  //   img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227292/newArrival_3_zd7iin.webp',
+  //   modelnumber: "AK-72",
+  //   description:
+  //     "Check out our new smartwatch! Sleek, long-lasting, with AI voice support and top-tier fitness tracking for active users.",
+  // },
+  // {
+  //   id: 4,
+  //   productId: "ak50_18",
+  //   img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227243/newArrival_4_naurw6.webp',
+  //   modelnumber: "AK-50",
+  //   description:
+  //     "Explore our latest smartwatch: elegant design, robust build, AI voice support, and advanced fitness tracking for your active life.",
+  // },
 ];
 
 const tradeTeam = [
@@ -57,8 +89,8 @@ const tradeTeam = [
     img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227327/ashik_yrrkvn.webp',
     name: "MD ASHIK MAHMUD",
     position: "Foreign Trade consultent",
-    Phone: "+86 1555 963 2606",
-    whatsapp: "+86 1555 963 2606",
+    // Phone: "+86 1555 963 2606",
+    // whatsapp: "+86 1555 963 2606",
     Wechat: "ashik448",
     email: "ashikmahmud@wokoxun.net",
   },
@@ -67,10 +99,10 @@ const tradeTeam = [
     img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227325/mehedi_lbbmdi.webp',
     name: "MD MEHEDI HASAN",
     position: "Foreign Trade consultent",
-    Phone: "+86 1990 964 4914",
-    whatsapp: "+86 1990 964 4914",
-    Wechat: "mishu5772",
-    email: "mehedihasan604184@gmail.com",
+    // Phone: "+86 1990 964 4914",
+    // whatsapp: "+86 1990 964 4914",
+    // Wechat: "mishu5772",
+    // email: "mehedihasan604184@gmail.com",
   },
 ];
 
@@ -117,7 +149,7 @@ const NewArraivals = () => {
         <div className="aboutcompany_right">
           <h2 className="aboutcompany_right-title">About Company</h2>
           <h4 className="aboutcompany_right-subtitle">
-            Shenzhen Wo Ko sun Electronic Technology Co., Ltd.
+            Shenzhen Wokoxun Electronic Technology Co., Ltd.
           </h4>
           <p className="aboutcompany_right-p">
             The company is committed to the research and development, design,
@@ -136,8 +168,12 @@ const NewArraivals = () => {
         </div>
       </div>
 
+      <div className="factory">
+      <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741497715/factory_blnvsc.webp'} alt="office" />
+      </div>
+
       {/* Trade team */}
-      <div className="tradeteam">
+      {/* <div className="tradeteam">
         <h2 className="tradeteam_title section_heading">Trade Team</h2>
         <div className="tradeteam_members">
           {tradeTeam.map((item) => (
@@ -168,7 +204,7 @@ const NewArraivals = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

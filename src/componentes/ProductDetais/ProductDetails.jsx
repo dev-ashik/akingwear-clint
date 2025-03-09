@@ -76,7 +76,7 @@ const ProductDetails = () => {
             className="button_primary"
             onClick={() => setModalIsOpen(true)}
           >
-            buy now <FaCartPlus />
+            inquiry / quotation <FaCartPlus />
           </button>
 
           <BuyNowModal

@@ -44,7 +44,8 @@ const BuyNowModal = ({ modalIsOpen, setModalIsOpen }) => {
         <div className="buyNowModal_body">
         <button className="modalCloseBtn" onClick={closeModal}><IoClose /></button>
 
-        <h4>Payment temporay Disabled!! <br /> Please contact throuth Whatsapp or Email.</h4>
+        {/* <h4>Payment temporay Disabled!! <br /> Please contact throuth Whatsapp or Email.</h4> */}
+        <h4>To get price. <br /> Please contact throuth Whatsapp or Email.</h4>
 
         <img className="whatappQrCode" src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227160/whatsapp_wugjdo.webp'} alt="whatsapp"/>
         <p>Email: ashikmahmud@wokoxun.net</p>

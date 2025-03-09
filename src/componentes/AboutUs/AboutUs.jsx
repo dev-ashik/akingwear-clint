@@ -4,7 +4,8 @@ const AboutUs = () => {
   return (
     <div className="aboutUs largewidth">
       <div className="aboutUs_header">
-        <div>
+        <img src={"https://res.cloudinary.com/dbat8c1bl/image/upload/v1741497715/factory_blnvsc.webp"} alt="" />
+        {/* <div>
           <h1 className="aboutUsHeader_title">About Us</h1>
           <p className="aboutUsHeader_desc">
             Welcome to our premium smartwatches! As a top manufacturer, we offer
@@ -12,7 +13,7 @@ const AboutUs = () => {
             support OEM services and can customize your logo. Experience the
             perfect blend of style and functionality.
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="aboutUs_content">
         <div className="aboutUsContent_left">

@@ -116,7 +116,7 @@ const Watches = () => {
         </LazyLoad>
             
             <div className="product_desc">
-              <h3 className="productCart_model">{watch.model} Smart Watch</h3>
+              <h3 className="productCart_model">{watch.title} Smart Watch</h3>
               <p>{watch.desc}</p>
             </div>
             <div className="productCart_footer">
@@ -136,7 +136,7 @@ const Watches = () => {
           next <FaArrowRight />
         </button>
       </div> */}
-      <div className="downloadCatalogue_section">
+      {/* <div className="downloadCatalogue_section">
         <button
           onClick={() =>
             handleDownloadCv(
@@ -147,7 +147,7 @@ const Watches = () => {
         >
           Download catalogue <IoMdDownload />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

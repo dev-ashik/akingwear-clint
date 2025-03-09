@@ -79,13 +79,20 @@ body {
   cursor: pointer;
   transition: background-image 0.3s ease-in-out;
   font-size: 19px;
+  text-decoration: none;
   /* letter-spacing: 2px; */
 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+
+  font-weight: 100;
 }
+
+/* .button_primary svg {
+  font-weight: 100 !important;
+} */
 
 .button_primary:hover {
   background-image: linear-gradient(

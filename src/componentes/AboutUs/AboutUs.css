@@ -1,5 +1,5 @@
 .aboutUs_header {
-  background-image: url("../../assets/aboutus-bg.png");
+  /* background-image: url("https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227159/aboutus-bg_mtikbs.webp");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -10,7 +10,8 @@
   justify-content: left;
   align-items: center;
 
-  padding-left: 4rem;
+  padding-left: 4rem; */
+  text-align: center;
 }
 
 .aboutUsHeader_title {
