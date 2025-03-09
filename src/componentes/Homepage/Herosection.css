@@ -1,5 +1,5 @@
 .herosection {
-  background-image: url("https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227158/heroSection_bg_ziddqi.webp");
+  background-image: url("https://res.cloudinary.com/dbat8c1bl/image/upload/v1741491893/Blue_Navy_hyvigk.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -34,6 +34,7 @@
 .herosection_description {
   width: 50%;
   padding-right: 60px;
+  margin-top: -130px;
 
   animation: heroText 1s ease-in-out;
   transform-style: preserve-3d;
@@ -50,18 +51,20 @@
 
 .herosectionDescription_Title {
   font-size: 45px;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: aliceblue;
   margin-bottom: 12px;
 }
 
 .herosectionDescription_subtitle {
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  color: #9dcfdb;
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
 
 .herosectionDescription_paragraph {
-  color: #dfdfdf;
+  color: #cbc8c8;
   text-align: justify;
 }
 
@@ -77,6 +80,7 @@
 
   .herosection_description {
     padding-right: 40px;
+    margin-top: 0px;
   }
 
   .herosectionDescription_Title {

@@ -115,7 +115,7 @@ const NewArraivals = () => {
           <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227158/office_fmw4tw.webp'} alt="office" />
         </div>
         <div className="aboutcompany_right">
-          <h2 className="aboutcompany_right-title">About Compay</h2>
+          <h2 className="aboutcompany_right-title">About Company</h2>
           <h4 className="aboutcompany_right-subtitle">
             Shenzhen Wo Ko sun Electronic Technology Co., Ltd.
           </h4>
