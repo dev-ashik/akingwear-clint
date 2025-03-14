@@ -9,7 +9,7 @@ const ProductDetails = () => {
   const [watch, setWatch] = useState({});
   const [largeImg, setLargeImg] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  let { watchId } = useParams();
+  let { watchUrl } = useParams();
 
   const handleLargephoto = (index) => {
     setLargeImg(watch.img[index]);
@@ -17,14 +17,14 @@ const ProductDetails = () => {
 
   useEffect(() => {
     const currentWatch = all_watches_data.filter(
-      (watch) => watch.id == watchId
+      (watch) => watch.url == watchUrl
     );
     setWatch(currentWatch[0]);
 
     const watchPhotos = currentWatch[0].img;
     setLargeImg(watchPhotos[0]);
     return () => {};
-  }, [watchId]);
+  }, [watchUrl]);
 
   return (
     <div className="productDetails pagewidth">

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Watches.css";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 import { all_watches_data } from "../../data";
 import { FaArrowRight } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
@@ -106,21 +106,29 @@ const Watches = () => {
       <div className="product_section">
         {filteredWatches.map((watch) => (
           <div className="product_cart" key={watch.id}>
-        <LazyLoad
-          height={200}
-          offset={100}
-          placeholder={<div style={{ backgroundColor: '#f0f0f0', height: '100%' }}>Loading...</div>}
-          once
-        >
-          <img className="product_img" src={watch.img[0]} alt="img" />
-        </LazyLoad>
-            
+            <LazyLoad
+              height={200}
+              offset={100}
+              placeholder={
+                <div style={{ backgroundColor: "#f0f0f0", height: "100%" }}>
+                  Loading...
+                </div>
+              }
+              once
+            >
+              <img className="product_img" src={watch.img[0]} alt="img" />
+            </LazyLoad>
+
             <div className="product_desc">
               <h3 className="productCart_model">{watch.title} Smart Watch</h3>
-              <p>{watch.desc}</p>
+              <p>
+                {watch.desc.length > 150
+                  ? `${watch.desc.substring(0, 150)}...`
+                  : watch.desc}
+              </p>
             </div>
             <div className="productCart_footer">
-              <Link to={`${watch.id}`} className="seeMore_btn">
+              <Link to={`${watch.url}`} className="seeMore_btn">
                 See More <FaArrowRight />
               </Link>
             </div>

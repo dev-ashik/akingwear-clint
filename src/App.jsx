@@ -25,8 +25,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="watches" element={<Watches />} />
-            <Route path="watches/:watchId" element={<ProductDetails />} />
-            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="watches/:watchUrl" element={<ProductDetails />} />
+            <Route
+              path="aboutus/wokoxun-akingwear-shenzhen-wokoxun-electronic-technology-co-ltd"
+              element={<AboutUs />}
+            />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

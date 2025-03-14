@@ -8,10 +8,11 @@ import { Link } from "react-router-dom";
 
 const newarraival = [
   {
-    id: "ggf",
+    id: "gdf",
     productId: "ak77_25",
     img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741315508/ak77_1_pgfp3c.jpg',
     modelnumber: "AK-77",
+    url: "woKosun-aK77-bluetooth-calling-smartwatch-stainless-steel-body-touchscreen-display-imported-from-china",
     description:
       "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
   },
@@ -19,23 +20,26 @@ const newarraival = [
     id: "ggf",
     productId: "ak80_24",
     img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741315811/ak80_2_erf6ox.jpg',
-    modelnumber: "AK-58",
+    modelnumber: "AK-80",
+    url: "woKosun-aK80-bluetooth-calling-smartwatch-stainless-steel-body-touchscreen-display-imported-from-china",
     description:
       "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
   },
   {
-    id: "ggf",
+    id: "ggdf",
     productId: "ak82_22",
     img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741316328/ak82_1_vepvg7.jpg',
-    modelnumber: "AK-58",
+    modelnumber: "AK-82",
+    url: "woKosun-aK82-bluetooth-calling-smartwatch-stainless-steel-body-touchscreen-display-imported-from-china",
     description:
       "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
   },
   {
-    id: "ggf",
+    id: "gsgf",
     productId: "ak58_14",
     img: 'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227241/newArrival_1_sbzgqk.webp',
     modelnumber: "AK-58",
+    url: "woKosun-aK58-bluetooth-calling-smartwatch-stainless-steel-body-touchscreen-display-imported-from-china",
     description:
       "Discover our new sport smartwatch! Sleek design, durable, AI voice support, advanced fitness tracking—perfect for an active lifestyle.",
   },
@@ -128,7 +132,7 @@ const NewArraivals = () => {
                 </p>
                 <div>
                   <Link
-                    to={`watches/${watch.productId}`}
+                    to={`watches/${watch.url}`}
                     className="button_primary"
                     style={{ boxShadow: "lightgray 1px 1px 10px" }}
                   >
@@ -152,18 +156,7 @@ const NewArraivals = () => {
             Shenzhen Wokoxun Electronic Technology Co., Ltd.
           </h4>
           <p className="aboutcompany_right-p">
-            The company is committed to the research and development, design,
-            and production services of inteligentwearable devices, providing
-            one-stop services from multi category, multi appearance, and
-            differentiatedresearch and development to landing. t is a
-            professional intelligent wearable production and supply
-            sourcemanufacturer, mainly engaged in inteligent wearable design,
-            research and development, mold production, andsupporting various
-            types of intelligent wearable devices Customization of OEM/ODM and
-            App software; Thecompany has an efficient and professional design
-            and development team as well as a production team. Wewill provide
-            high-quality products and excellent services according to user
-            needs!
+            Wokoxun is a manufacturer of Bluetooth-connected smartwatches in China. We help companies manufacture and import smartwatches from China. With 8 years of experience in ODM & OEM services, we specialize in assisting importers and brands through our experienced team and strict quality control processes. We have earned recognition for our on-time delivery, exceptional service, and reliable after-sales support.
           </p>
         </div>
       </div>

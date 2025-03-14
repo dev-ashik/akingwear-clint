@@ -11,7 +11,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar_innercontent pagewidth">
         <div className="navlogo">
-          <img src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227158/akingwearLogo_tqc1uo.webp'} alt="Akingwear" />
+          <img
+            src={
+              "https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227158/akingwearLogo_tqc1uo.webp"
+            }
+            alt="Akingwear"
+          />
         </div>
         <ul className="navLinks">
           <li>
@@ -25,7 +30,10 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="navLinks_item" to="/aboutus">
+            <Link
+              className="navLinks_item"
+              to="/aboutus/wokoxun-akingwear-shenzhen-wokoxun-electronic-technology-co-ltd"
+            >
               About us
             </Link>
           </li>
@@ -74,7 +82,7 @@ const Navbar = () => {
                 <Link
                   className="navLinks_item"
                   onClick={() => setIsmenuactive(!ismenuactive)}
-                  to="/aboutus"
+                  to="/aboutus/wokoxun-akingwear-shenzhen-wokoxun-electronic-technology-co-ltd"
                 >
                   About us
                 </Link>
