@@ -63,7 +63,7 @@ const AboutUs = () => {
         <div className="aboutUsContent_right">
           <div className="aboutUsContentRight_factory"></div>
           <div className="aboutUsContentRight_company">
-            <h1>Compnay</h1>
+            <h1>Company</h1>
             <p>
               Our company is a leading innovator in the smart watch industry,
               dedicated to merging cutting-edge technology with elegant design.
