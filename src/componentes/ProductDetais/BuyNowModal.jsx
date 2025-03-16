@@ -1,6 +1,7 @@
 import "./BuyNowModal.css";
 import Modal from "react-modal";
 import { IoClose } from "react-icons/io5";
+import MailForm from "../MailForm/MailForm";
 
 const customStyles = {
   content: {
@@ -45,10 +46,12 @@ const BuyNowModal = ({ modalIsOpen, setModalIsOpen }) => {
         <button className="modalCloseBtn" onClick={closeModal}><IoClose /></button>
 
         {/* <h4>Payment temporay Disabled!! <br /> Please contact throuth Whatsapp or Email.</h4> */}
-        <h4>To get price. <br /> Please contact throuth Whatsapp or Email.</h4>
+        {/* <h4>To get price. <br /> Please contact throuth Whatsapp or Email.</h4> */}
 
-        <img className="whatappQrCode" src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227160/whatsapp_wugjdo.webp'} alt="whatsapp"/>
-        <p>Email: ashikmahmud@wokoxun.net</p>
+        {/* <img className="whatappQrCode" src={'https://res.cloudinary.com/dbat8c1bl/image/upload/v1741227160/whatsapp_wugjdo.webp'} alt="whatsapp"/> */}
+        {/* <p>Email: ashikmahmud@wokoxun.net</p> */}
+        
+        <MailForm/>
         </div>
         
       </Modal>

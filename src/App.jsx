@@ -13,6 +13,7 @@ import Watches from "./componentes/Watches/Watches";
 import NotFound from "./componentes/NotFound/NotFound";
 import Contact from "./componentes/Contact/Contact";
 import ProductDetails from "./componentes/ProductDetais/ProductDetails";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -33,6 +34,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <ToastContainer />
           <Footer />
         </div>
       </Router>

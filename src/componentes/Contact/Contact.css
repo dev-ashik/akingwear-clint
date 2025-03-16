@@ -116,10 +116,24 @@
   border-radius: 5px;
 }
 
+.contact_contact-div {
+  width: 500px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 700px) {
   .contactInfo_qrcode img {
     height: 120px;
     width: 120px;
+  }
+
+  .contact_contact-div {
+    width: 400px;
   }
 }
 
@@ -135,4 +149,9 @@
   .contact_image {
     width: 100%;
   }
+
+  .contact_contact-div {
+    width: 100%;
+  }
+
 }
